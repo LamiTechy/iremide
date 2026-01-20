@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="resume.css">
+    <script src="https://kit.fontawesome.com/2361899266.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<section class="head">
+   <table>
+    <tr>
+        <th><i class="fa-solid fa-location-crosshairs"></i> 40 oloke meji,Abeokuta</th>
+        <th><i class="fa-solid fa-phone"></i>+2347036780729</th>
+        <th><i class="fa-solid fa-envelope"></i>akintoyesheriff586@gmail.com</th>
+        <th><i class="fa-brands fa-facebook"></i></th>
+        <th><i class="fa-brands fa-linkedin"></i></th>
+        <th><i class="fa-brands fa-discord"></i></th>
+        <th><i class="fa-solid fa-magnifying-glass"></i></th>
+    </tr>
+
+   </table>
+</section>
+<section class="header">
+    
+<nav>
+    <img src="./logo.jpg" alt="logo" width="7%">
+    <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+    <div class="nav-links">
+    <div class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-times"></i></div>
+    <ul>
+        <li><a href="A"> Home</a> </li>
+        <li><a href="A"> Contact us</a> </li>
+        <li><a href="A"> Help</a> </li>
+        <li><a href="A"> About</a> </li>
+        <li><a href="A"> FAQ</a> </li>
+    </ul> 
+    <div class="social-icons">
+        <i style="color: black;" class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-discord"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    </div>
+</nav>
+
+<div class="text">
+    <h1> Web Design & Development Course </h1>
+    <p><b>Web Design is a specialisation of the design stream.<br>
+        They also use HTML,CSS,WYSIWYG editing software,<br> mark up validators etc.
+        to create design elements.</b></p>
+         <a href="#"> Visit Us To Know More</a>
+
+</div>
+</section>
+
+<script>
+function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('show');
+}
+</script>
+
+</body>
+
+</html>
