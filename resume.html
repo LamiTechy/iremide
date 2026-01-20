@@ -15,7 +15,7 @@
     <tr>
         <th><i class="fa-solid fa-location-crosshairs"></i> 40 oloke meji,Abeokuta</th>
         <th><i class="fa-solid fa-phone"></i>+2347036780729</th>
-        <th><i class="fa-solid fa-envelope"></i>akintoye@gmail.com</th>
+        <th><i class="fa-solid fa-envelope"></i>akintoyesheriff586@gmail.com</th>
         <th><i class="fa-brands fa-facebook"></i></th>
         <th><i class="fa-brands fa-linkedin"></i></th>
         <th><i class="fa-brands fa-discord"></i></th>
@@ -30,7 +30,6 @@
     <img src="./logo.jpg" alt="logo" width="7%">
     <div class="hamburger" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
     <div class="nav-links">
-    <div class="close-btn" onclick="toggleMenu()"><i class="fa-solid fa-times"></i></div>
     <ul>
         <li><a href="A"> Home</a> </li>
         <li><a href="A"> Contact us</a> </li>
@@ -59,7 +58,9 @@
 
 <script>
 function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('show');
+    const navLinks = document.querySelector('.nav-links');
+    const isOpen = navLinks.classList.toggle('show');
+    document.body.style.overflow = isOpen ? 'hidden' : '';
 }
 </script>
 

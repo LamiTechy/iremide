@@ -85,16 +85,6 @@ nav ul li:hover ::after{
     color: black;
 }
 
-.close-btn {
-    display: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: black;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
 .social-icons {
     display: none;
 }
@@ -128,6 +118,10 @@ p{
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .head table {
         border-spacing: 10px;
     }
@@ -172,10 +166,6 @@ p{
         z-index: 1000;
         padding: 20px;
         box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-    }
-    
-    .nav-links.show .close-btn {
-        display: block;
     }
     
     .nav-links.show ul {
